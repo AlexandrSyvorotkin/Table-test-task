@@ -1,0 +1,13 @@
+.ButtonsBlock {
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.ButtonsBlock :first-child {
+    margin: 25px;
+}
+
+.ButtonsBlock :last-child {
+    margin: 25px;
+}
