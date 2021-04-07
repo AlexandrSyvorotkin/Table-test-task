@@ -1,15 +1,25 @@
-import React from 'react';
+import React from "react";
 
-
-const DetailedItem = ({detailItemData}) => {
-
-    const AddressCity = detailItemData && detailItemData.address ? detailItemData.address.city : null  
-    const AddressstreetAddres = detailItemData && detailItemData.address ? detailItemData.address.streetAddress : null  // Решение проблемы доступа до вложенных элементов обьекта 
-    const AddressState = detailItemData && detailItemData.address ? detailItemData.address.state : null
-    const AddressZip = detailItemData && detailItemData.address ? detailItemData.address.zip : null
+const DetailedItem = ({ detailItemData }) => {
+    const AddressCity =
+        detailItemData && detailItemData.address
+            ? detailItemData.address.city
+            : null;
+    const AddressstreetAddres =
+        detailItemData && detailItemData.address
+            ? detailItemData.address.streetAddress
+            : null;
+    const AddressState =
+        detailItemData && detailItemData.address
+            ? detailItemData.address.state
+            : null;
+    const AddressZip =
+        detailItemData && detailItemData.address
+            ? detailItemData.address.zip
+            : null;
 
     return (
-        <div> 
+        <div>
             <div>
                 id: <b>{detailItemData.id}</b>
             </div>
@@ -38,11 +48,13 @@ const DetailedItem = ({detailItemData}) => {
                 zip: <b>{AddressZip}</b>
             </div>
             <div>
-                description: <p><b>{detailItemData.description}</b></p>
+                description:{" "}
+                <p>
+                    <b>{detailItemData.description}</b>
+                </p>
             </div>
-            
         </div>
-    )
-}
+    );
+};
 
 export default DetailedItem;
