@@ -7,7 +7,7 @@ import InputFrom from '../inputFrom/inputForm';
 const tableBody = ({contactData, sortData, directionSort, detailRow, detailItemData, isLoading, rowIsClick, onSearchSend, getInputFormData}) => {
     return (
         
-            isLoading ? <Loader/> :  /* Прогрузка лоадера или таблицы */
+            isLoading ? <Loader/> :
         <Fragment>
             <InputFrom getInputFormData={getInputFormData}/>
             <Table 
